@@ -5,7 +5,7 @@ Credit risk analysis by using imbalanced-learn and scikit-learn libraries to bui
 Credit risk analysis was performed by machine learning models built using imbalanced-learn and scikit-learn libraries. Analysis aims to demonstrate the effectiveness of machine learning models in the following steps:
 1. Oversample data with the `RandomOverSampler` and `SMOTE` algorithms
 2. Undersample the data with `ClusterCentroids` algorithm
-3. Combine over- and undersampling methods with <SMOTEENN> algorithm.
+3. Combine over- and undersampling methods with `SMOTEENN` algorithm.
 4. Compare `BalancedRandomForestClassifier` and `EasyEnsembleClassifier` machine learning models that reduce bias to predict credit risk.
 
 ## Results
@@ -114,4 +114,8 @@ Credit risk analysis was performed by machine learning models built using imbala
 
 ## Summary
 
-Results demonstrate that none of the
+Results demonstrate that none of the of the oversampling, undersampling, or combined resampling methods provided convincing evidence of their effectiveness for the logistic regression models.
+
+The comparison `BalancedRandomForestClassifier` and `EasyEnsembleClassifier` provided more convincing results. Overall, the metrics `EasyEnsembleClassifier` appear most suitable for credit risk analysis due to its high balanced accuracy score, high sensitivity in predicting high risk credits, and high precision as well as sensitivity in predicting low risk credits. The confusion matrix of `EasyEnsembleClassifier` also provides more promising ensemble logistic regression. Namely, `EasyEnsembleClassifier` made the least mistakes in identifying high risk and low risk credits, as demonstared in the confusion matrix.
+
+There is, however, a cause for concern in the metrics of `EasyEnsembleClassifier`. The imbalanced classification report, particularly on low risk credits, suggests overfitting of the model, which may result in poor generalization.
