@@ -3,14 +3,14 @@ Credit risk analysis by using imbalanced-learn and scikit-learn libraries to bui
 
 ## Overview
 Credit risk analysis was performed by machine learning models built using imbalanced-learn and scikit-learn libraries. Analysis aims to demonstrate the effectiveness of machine learning models in the following steps:
-1. Oversample data with the <RandomOverSampler> and <SMOTE> algorithms
-2. Undersample the data with <ClusterCentroids> algorithm
+1. Oversample data with the `RandomOverSampler` and `SMOTE` algorithms
+2. Undersample the data with `ClusterCentroids` algorithm
 3. Combine over- and undersampling methods with <SMOTEENN> algorithm.
-4. Compare <BalancedRandomForestClassifier> and <EasyEnsembleClassifier> machine learning models that reduce bias to predict credit risk.
+4. Compare `BalancedRandomForestClassifier` and `EasyEnsembleClassifier` machine learning models that reduce bias to predict credit risk.
 
 ## Results
 
-* Naive Random Oversampling with <RandomOverSampler> algorithm:<br>
+* Naive Random Oversampling with `RandomOverSampler` algorithm:<br>
 ![random_oversampling](images/naive_random_oversampling.png)<br>
 
   * Balanced Accuracy Score: 0.62
@@ -44,7 +44,7 @@ Credit risk analysis was performed by machine learning models built using imbala
     - Predicted as False Low Risk: 5580
     - Predicted True Low Risk: 11538
 
-* Undersampling with <ClusterCentroids> algorithm:<br>
+* Undersampling with `ClusterCentroids` algorithm:<br>
 ![undersampling](images/cluster_centroid_undersampling.png)
 
   * Balanced Accuracy Score: 0.49
@@ -61,7 +61,7 @@ Credit risk analysis was performed by machine learning models built using imbala
     - Predicted as False Low Risk: 9728
     - Predicted True Low Risk: 7390
 
-* Combination Sampling with <SMOTEENN> algorithm:<br>
+* Combination Sampling with `SMOTEENN` algorithm:<br>
 ![smoteenn](images/combination_smoteen.png)<br>
 
   * Balanced Accuracy Score: 0.62
@@ -78,8 +78,8 @@ Credit risk analysis was performed by machine learning models built using imbala
     - Predicted as False Low Risk: 5995
     - Predicted True Low Risk: 11123
 
-* Balanced Random Forest Classifier with <BalancedRandomForestClassifier> alorithm:<br>
-![brf](images/balanced_random_forest.png)
+* Balanced Random Forest Classifier with `BalancedRandomForestClassifier` alorithm:<br>
+![brf](images/balanced_random_forest.png)<br>
 
   * Balanced Accuracy Score: 0.79
   * Scores on high risk credit prediction:
@@ -95,8 +95,8 @@ Credit risk analysis was performed by machine learning models built using imbala
     - Predicted as False Low Risk: 1560
     - Predicted True Low Risk: 15558
 
-* Easy Ensemble Classifier with <EasyEnsembleClassifier> algorithm:<br>
-![easy_ensemble](images/easy_ensemble.png)
+* Easy Ensemble Classifier with `EasyEnsembleClassifier` algorithm:<br>
+![easy_ensemble](images/easy_ensemble.png)<br>
 
   * Balanced Accuracy Score: 0.92
   * Scores on high risk credit prediction:
@@ -113,3 +113,5 @@ Credit risk analysis was performed by machine learning models built using imbala
     - Predicted True Low Risk: 16139
 
 ## Summary
+
+Results demonstrate that none of the
