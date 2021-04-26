@@ -18,14 +18,14 @@ Credit risk analysis was performed by machine learning models built using imbala
     - Precision: 0.01
     - Sensitivity(Recall): 0.60
     - F1 harmonic: 0.02
-    - Predicted True: 52
-    - Predicted False: 35
+    - Predicted as True High Risk: 52
+    - Predicted as False High Risk: 35
   * Scores on low risk credit prediction:
     - Precision: 1.0
     - Sensitivity(Recall): 0.64
     - F1 harmonic: 0.78
-    - Predicted True: 6082
-    - Predicted False: 11036
+    - Predicted as False Low Risk: 6082
+    - Predicted as True Low Risk: 11036
 
 * SMOTE Oversampling:<br>
 ![smote](images/smote_oversampling.png)<br>
@@ -35,14 +35,14 @@ Credit risk analysis was performed by machine learning models built using imbala
     - Precision: 0.01
     - Sensitivity(Recall): 0.63
     - F1 harmonic: 0.02
-    - Predicted True: 55
-    - Predicted False: 32
+    - Predicted as True High Risk: 55
+    - Predicted as False High Risk: 32
   * Scores on low risk credit prediction:
     - Precision: 1.0
     - Sensitivity(Recall): 0.67
     - F1 harmonic: 0.80
-    - Predicted True: 5580
-    - Predicted False: 11538
+    - Predicted as False Low Risk: 5580
+    - Predicted True Low Risk: 11538
 
 * Undersampling with <ClusterCentroids> algorithm:<br>
 ![undersampling](images/cluster_centroid_undersampling.png)
@@ -52,14 +52,14 @@ Credit risk analysis was performed by machine learning models built using imbala
     - Precision: 0.00
     - Sensitivity(Recall): 0.55
     - F1 harmonic: 0.01
-    - Predicted True: 48
-    - Predicted False: 39
+    - Predicted as True High Risk: 48
+    - Predicted as False High Risk: 39
   * Scores on low risk credit prediction:
     - Precision: 0.99
     - Sensitivity(Recall): 0.43
     - F1 harmonic: 0.60
-    - Predicted True: 9728
-    - Predicted False: 7390
+    - Predicted as False Low Risk: 9728
+    - Predicted True Low Risk: 7390
 
 * Combination Sampling with <SMOTEENN> algorithm:<br>
 ![smoteenn](images/combination_smoteen.png)<br>
@@ -69,13 +69,47 @@ Credit risk analysis was performed by machine learning models built using imbala
     - Precision: 0.01
     - Sensitivity(Recall): 0.60
     - F1 harmonic: 0.02
-    - Predicted True: 52
-    - Predicted False: 32
+    - Predicted as True High Risk: 52
+    - Predicted as False High Risk: 32
   * Scores on low risk credit prediction:
     - Precision: 1.00
     - Sensitivity(Recall): 0.65
     - F1 harmonic: 0.79
-    - Predicted True: 5995
-    - Predicted False: 11123
+    - Predicted as False Low Risk: 5995
+    - Predicted True Low Risk: 11123
+
+* Balanced Random Forest Classifier with <BalancedRandomForestClassifier> alorithm:<br>
+![brf](images/balanced_random_forest.png)
+
+  * Balanced Accuracy Score: 0.79
+  * Scores on high risk credit prediction:
+    - Precision: 0.04
+    - Sensitivity(Recall): 0.67
+    - F1 harmonic: 0.07
+    - Predicted as True High Risk: 58
+    - Predicted as False High Risk: 29
+  * Scores on low risk credit prediction:
+    - Precision: 1.00
+    - Sensitivity(Recall): 0.91
+    - F1 harmonic: 0.95
+    - Predicted as False Low Risk: 1560
+    - Predicted True Low Risk: 15558
+
+* Easy Ensemble Classifier with <EasyEnsembleClassifier> algorithm:<br>
+![easy_ensemble](images/easy_ensemble.png)
+
+  * Balanced Accuracy Score: 0.92
+  * Scores on high risk credit prediction:
+    - Precision: 0.07
+    - Sensitivity(Recall): 0.91
+    - F1 harmonic: 0.14
+    - Predicted as True High Risk: 79
+    - Predicted as False High Risk: 8
+  * Scores on low risk credit prediction:
+    - Precision: 1.00
+    - Sensitivity(Recall): 0.94
+    - F1 harmonic: 0.97
+    - Predicted as False Low Risk: 979
+    - Predicted True Low Risk: 16139
 
 ## Summary
